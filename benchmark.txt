@@ -1,0 +1,137 @@
+$ python main.py 
+======================================================================
+BENCHMARK EVALUATION – 3 CHUNKER TYPES
+Scoring method : cosine similarity (embedder: text-embedding-3-small)
+======================================================================
+
+[Q1] When was VinBus established and what is its parent company?
+  Best answer : VinBus was established in 2019. Its parent company is Vingroup, specifically through subsidiary VinBus Ecology Transport Services LLC.
+
+  [recursive] score=0.900
+             answer : VinBus was established in 2019, and its parent company is Vingroup.
+
+  [    fixed] score=0.900
+             answer : VinBus was established in 2019, and its parent company is Vingroup.
+
+  [ sentence] score=0.900
+             answer : VinBus was established in 2019, and its parent company is Vingroup.
+
+----------------------------------------------------------------------
+
+[Q2] What cities has VinBus deployed or planned electric bus networks in?
+  Best answer : VinBus has deployed or planned electric bus networks in three major Vietnamese cities: Hanoi, Ho Chi Minh City, and Phu Quoc.
+
+  [recursive] score=0.963
+             answer : VinBus has deployed or planned electric bus networks in Hanoi, Ho Chi Minh City, and Phu Quoc.
+
+  [    fixed] score=0.941
+             answer : VinBus has deployed or planned electric bus networks in the following cities:
+
+- Hanoi
+- Ho Chi Minh City
+- Phu Quoc
+
+  [ sentence] score=0.941
+             answer : VinBus has deployed or planned electric bus networks in the following cities:
+
+- Hanoi
+- Ho Chi Minh City
+- Phu Quoc
+
+----------------------------------------------------------------------
+
+[Q3] What are the key characteristics of VinBus electric buses?
+  Best answer : VinBus electric buses are battery-powered with zero tailpipe emissions, low noise operation, smart monitoring and safety systems, cashless payment support, and free Wi-Fi and onboard digital services.
+
+  [recursive] score=0.752
+             answer : The key characteristics of VinBus electric buses include:
+
+- They are fully electric, designed specifically for urban transportation.
+- They aim to contribute to a modern and environmentally friendly public transportation system.
+- They focus on reducing emissions and noise pollution, promoting sustainable urban mobility.
+
+  [    fixed] score=0.891
+             answer : The key characteristics of VinBus electric buses include:
+
+- Battery-powered electric buses
+- Zero tailpipe emissions
+- Low noise operation
+- Smart monitoring and safety systems
+- Cashless payment support
+- Free Wi-Fi and onboard digital services
+
+  [ sentence] score=0.891
+             answer : The key characteristics of VinBus electric buses include:
+
+- Battery-powered electric buses
+- Zero tailpipe emissions
+- Low noise operation
+- Smart monitoring and safety systems
+- Cashless payment support
+- Free Wi-Fi and onboard digital services (reported features during deployment)
+
+----------------------------------------------------------------------
+
+[Q4] How does VinBus's business model differ from typical transport companies?
+  Best answer : VinBus operates under a non-profit-oriented model, emphasizing public service over direct profitability, supporting urban infrastructure development and encouraging public transport adoption. This aligns with Vingroup's ecosystem approach to urban development.
+
+  [recursive] score=0.899
+             answer : VinBus's business model differs from typical transport companies in that it operates under a non-profit-oriented model, emphasizing public service rather than direct profitability. This approach focuses on supporting urban infrastructure development and encouraging public transport adoption, aligning with broader goals of creating a modern and environmentally friendly urban public transportation system. In contrast, many transport companies prioritize profitability and financial returns, which can lead to different operational priorities and strategies.
+
+  [    fixed] score=0.941
+             answer : VinBus's business model differs from typical transport companies in that it operates under a non-profit-oriented model. This means that VinBus emphasizes public service over direct profitability, focusing on supporting urban infrastructure development and encouraging public transport adoption rather than prioritizing financial gains. This approach aligns with Vingroup’s broader ecosystem strategy for urban development, contrasting with many transport companies that aim for profit maximization.
+
+  [ sentence] score=0.938
+             answer : VinBus's business model differs from typical transport companies in that it operates under a non-profit-oriented model. While many transport companies focus on profitability, VinBus emphasizes public service, supporting urban infrastructure development, and encouraging public transport adoption. This approach aligns with Vingroup’s ecosystem strategy for urban development, prioritizing environmental and social goals over direct financial gain.
+
+----------------------------------------------------------------------
+
+[Q5] What are the main challenges facing VinBus?
+  Best answer : The main challenges include high upfront infrastructure cost, charging logistics and battery range limits, dependence on government subsidies common in public transport, and operational profitability constraints.
+
+  [recursive] score=0.776
+             answer : The main challenges facing VinBus include:
+
+1. **High upfront infrastructure cost**: Establishing the necessary infrastructure for electric buses can be expensive.
+2. **Charging logistics and battery range limits**: Managing the logistics of charging and ensuring that the buses have sufficient battery range for their routes can be complex.
+3. **Dependence on government subsidies**: Like many public transport systems, VinBus may rely on government support to remain financially viable.
+4. **Operational profitability constraints**: Operating under a non-profit-oriented model may limit the ability to achieve financial sustainability while still providing public services.
+
+These challenges are typical for early-stage electrified transit systems worldwide.
+
+  [    fixed] score=0.815
+             answer : The main challenges facing VinBus include:
+
+- High upfront infrastructure costs
+- Charging logistics and battery range limits
+- Dependence on government subsidies, which is common in public transport
+- Operational profitability constraints
+
+These challenges are typical for early-stage electrified transit systems worldwide.
+
+  [ sentence] score=0.657
+             answer : The main challenges facing VinBus include:
+
+1. **Infrastructure Development**: Establishing the necessary charging infrastructure for electric buses across cities can be a significant hurdle, especially in urban areas where space is limited.
+
+2. **Public Adoption**: Encouraging the public to transition from traditional diesel buses to electric buses may require extensive awareness campaigns and incentives to build trust and acceptance.
+
+3. **Operational Costs**: While VinBus operates on a non-profit model, managing operational costs effectively while ensuring service quality can be challenging, particularly in the early stages of implementation.
+
+4. **Integration with Existing Transport Systems**: Seamlessly integrating electric buses with existing metro and multimodal transit systems requires careful planning and coordination with other transport providers.
+
+5. **Regulatory and Policy Support**: VinBus may face challenges in navigating regulatory frameworks and securing support from local governments to promote electric public transportation initiatives.
+
+6. **Market Competition**: As the electric transportation market grows, VinBus may encounter competition from other emerging electric transport services, necessitating continuous innovation and improvement.
+
+7. **Sustainability Goals**: Meeting environmental impact goals while expanding operations and maintaining service levels can be a complex balancing act.
+
+Addressing these challenges will be crucial for VinBus to achieve its goals and contribute effectively to Vietnam’s urban mobility and sustainability initiatives.
+
+----------------------------------------------------------------------
+
+AVERAGE SCORES ACROSS ALL QUESTIONS:
+  recursive : 0.858
+      fixed : 0.897
+   sentence : 0.865
+======================================================================
