@@ -1,8 +1,8 @@
 # Báo Cáo Lab 7: Embedding & Vector Store
 
-**Họ tên:** [Tên sinh viên]
+**Họ tên:** Trần Kiên Trường (2A202600496)
 **Nhóm:** [Tên nhóm]
-**Ngày:** [Ngày nộp]
+**Ngày:** 10/04/2026
 
 ---
 
@@ -11,29 +11,32 @@
 ### Cosine Similarity (Ex 1.1)
 
 **High cosine similarity nghĩa là gì?**
-> *Viết 1-2 câu:*
+> Hai vector có hướng gần nhau trong embedding space, nghĩa là hai câu có ngữ nghĩa tương đồng cao.
 
 **Ví dụ HIGH similarity:**
-- Sentence A:
-- Sentence B:
-- Tại sao tương đồng:
+- Sentence A: "Machine learning is a subset of artificial intelligence"
+- Sentence B: "ML is part of AI research"
+- Tại sao tương đồng: Cả hai đều nói về mối quan hệ giữa machine learning và AI
 
 **Ví dụ LOW similarity:**
-- Sentence A:
-- Sentence B:
-- Tại sao khác:
+- Sentence A: "The stock market crashed today"
+- Sentence B: "I love cooking pasta for dinner"
+- Tại sao khác: Hoàn toàn không cùng chủ đề
 
 **Tại sao cosine similarity được ưu tiên hơn Euclidean distance cho text embeddings?**
-> *Viết 1-2 câu:*
+> Cosine đo góc (hướng) chứ không quan tâm độ lớn. Với text, tần suất từ khác nhau nhưng hướng ngữ nghĩa quan trọng hơn — hai câu dài ngắn khác nhau vẫn có thể cùng nghĩa.
 
 ### Chunking Math (Ex 1.2)
 
 **Document 10,000 ký tự, chunk_size=500, overlap=50. Bao nhiêu chunks?**
 > *Trình bày phép tính:*
-> *Đáp án:*
+> Step = chunk_size - overlap = 500 - 50 = 450
+> Chunks = ceil((10000 - 500) / 450) + 1 = ceil(9500/450) + 1 = 22 + 1 = **23 chunks**
+> *Đáp án:* **23 chunks**
 
 **Nếu overlap tăng lên 100, chunk count thay đổi thế nào? Tại sao muốn overlap nhiều hơn?**
-> *Viết 1-2 câu:*
+> Step = 500 - 100 = 400 → chunks = ceil(9500/400) + 1 = **24 chunks**
+> Overlap nhiều hơn giúp preserve context tốt hơn giữa các chunks liền kề, đặc biệt quan trọng khi ranh giới chunk có thể cắt giữa câu quan trọng.
 
 ---
 

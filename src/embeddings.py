@@ -5,7 +5,7 @@ import math
 
 LOCAL_EMBEDDING_MODEL = "all-MiniLM-L6-v2"
 OPENAI_EMBEDDING_MODEL = "text-embedding-3-small"
-EMBEDDING_PROVIDER_ENV = "EMBEDDING_PROVIDER"
+EMBEDDING_PROVIDER_ENV = "openai"
 
 
 class MockEmbedder:
